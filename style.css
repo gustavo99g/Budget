@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(233, 236, 236);
+    font-family: 'Roboto', sans-serif;
+}
+
+.main{
+    width: 100%;
+    background: white;   
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 30px  black;
+}
+
+.header{
+    background: url('https://www.infoescola.com/wp-content/uploads/2019/10/paisagem-natural-jalapao-970437844.jpg') no-repeat;
+    background-size: cover;
+    height: 40%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.header h1{
+    margin: 20px;
+}
+
+.header .despesas{
+    display: flex;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.header .despesas span{
+    font-size: 50px;
+    margin-right: 20px;
+    
+}
+
+.header .renda,.gastos{
+    width: 400px;
+    font-size: 15px;
+    padding: 10px;
+    margin-bottom: 2%;
+    height: 15%;
+    color: rgba(0, 0, 0, 0.753);
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .renda{
+    background: #409e77;
+}
+
+.header .gastos {
+    background: #f35454;
+}
+
+.header .value{
+    display: flex;
+    color: rgba(255, 255, 255, 0.808);
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.header .value span{
+    margin-left: 10px;
+    padding: 5px;
+    font-weight: bold;
+
+}
+
+
+.header .value span:nth-child(1) {
+    font-size: 22px;
+}
+
+.center{
+    display: flex;
+    background-color: rgb(228, 222, 222);
+    justify-content: center;
+}
+
+.center input,.center select,.center button {
+    margin: 15px 8px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+    outline: none;
+    text-decoration: none;
+    
+}
+
+.center button{
+    background: transparent;
+ 
+}
+
+.center button:hover{
+    background: #409e77;
+    cursor: pointer;
+    transition: 1s ease;
+    border-radius: 50%;
+}
+
+.ionicon {
+    font-size: 35px;
+}
+.center input:nth-last-child(2){
+    width: 90px;
+}
+.center input:nth-last-child(3){
+    width: 390px;
+}
+
+.bottom{
+    display: flex;
+    justify-content:space-evenly;
+    width: 80%;
+    margin-top: 2%;
+    flex: 1;
+    margin: 2% auto;
+}
+
+.bottom .inc, .bottom .exp{
+    
+    width: 40%; 
+}
+
+.bottom .inc .renda,.bottom .exp .gasto {
+    font-size: 23px;
+    font-weight: bold;
+    padding: 15px 5px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.185);
+}
+
+.bottom .exp .gasto{
+    color: #f35454;   
+
+}
+
+.bottom .inc .renda{
+    color: #409e77;
+}
+
+.bottom .lista{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    padding-right: 0px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.185);
+}
+
+.bottom .lista .itens {
+    display: flex;
+}
+
+.bottom .lista .itens p{
+    font-weight: bold;
+}
+
+.bottom .lista .itens button{
+    border: 0;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+
+.bottom .inc .lista .itens p {
+    color: #409e77;
+}
+
+.bottom .exp .lista .itens p{
+    color: #f35454;
+}
+
+
+.bottom .lista .itens button{
+   display: none;
+   margin-left:15px ;
+}
+
+.bottom .lista:hover .itens button{
+   display: inline-block;
+}
+
+
+input[type="number"] {
+    -webkit-appearance: textfield;
+       -moz-appearance: textfield;
+            appearance: textfield;
+  }
+  input[type=number]::-webkit-inner-spin-button, 
+  input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+  }

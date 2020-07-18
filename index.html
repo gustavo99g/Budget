@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Despesas</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <h1>Despesas</h1>
+            <div class="despesas">
+            <h2>0</h2>
+            </div>
+            <div class="renda">
+                <h2>Renda</h2>
+                <div class="value">
+                    <span>+</span>
+                    <h2>0</h2>
+                    
+                </div>
+
+            </div>
+            <div class="gastos">
+                <h2>Gastos</h2>
+                <div class="value">
+                    <span>-</span>
+                    <h2>0</h2>
+                   
+                </div>
+            </div>
+        </div>
+        <div class="center">
+            <select class="select">
+                <option value="inc" selected>+</option>
+                <option value="exp">-</option>
+            </select>
+            
+            <input class="desc" autofocus placeholder="Digite a descrição">
+            <input type="number" class="valor"  placeholder="Valor">
+            <button class="add"><ion-icon name="add-outline"></ion-icon></button>
+       
+        </div>
+        <div class="bottom">
+            <div class="inc">
+                <div class="renda">Renda</div>
+                             
+                
+            </div>
+
+            <div class="exp">
+                <div class="gasto">Gastos</div>
+                
+                
+            </div>
+        </div>
+
+    </div>
+<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+
+<script src="main.js"></script>
+</body>
+</html>
